@@ -6,7 +6,7 @@ public class Movie
 	public static final int REGULAR 	= 0;
 	public static final int NEW_RELEASE = 1;
 
-	private String title;
+	private final String title;
 	private int priceCode;
 
 	public Movie (String title, int priceCode) {
@@ -18,11 +18,7 @@ public class Movie
 		return priceCode;
 	}
 
-	public void setPriceCode (int code) {
-		priceCode = code;
-	}
-
-	public String getTitle () {
+    public String getTitle () {
 		return title;
 	}
 
